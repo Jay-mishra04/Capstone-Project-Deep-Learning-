@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer CSAT Prediction</title>
+</head>
+<body>
+    <h2>Customer CSAT Prediction</h2>
+    <form action="/predict" method="post">
+
+        <label>Channel Name:</label>
+        <input type="text" name="Channel_name" required><br><br>
+
+        <label>Category:</label>
+        <input type="text" name="Category" required><br><br>
+
+        <label>Sub-category:</label>
+        <input type="text" name="Sub-category" required><br><br>
+
+        <label>Order Date Time:</label>
+        <input type="text" name="order_date_time" placeholder="DD/MM/YYYY HH:MM" required><br><br>
+
+        <label>Issue Reported At:</label>
+        <input type="text" name="Issue_reported at" placeholder="DD/MM/YYYY HH:MM" required><br><br>
+
+        <label>Issue Responded:</label>
+        <input type="text" name="issue_responded" placeholder="DD/MM/YYYY HH:MM" required><br><br>
+
+        <label>Survey Response Date:</label>
+        <input type="text" name="Survey_response_Date" placeholder="DD-Mon-YY" required><br><br>
+
+        <label>Product Category:</label>
+        <input type="text" name="Product_category" required><br><br>
+
+        <label>Item Price:</label>
+        <input type="number" step="any" name="Item_price" required><br><br>
+
+        <label>Connected Handling Time:</label>
+        <input type="number" step="any" name="connected_handling_time" required><br><br>
+
+        <label>Agent Name:</label>
+        <input type="text" name="Agent_name" required><br><br>
+
+        <label>Supervisor:</label>
+        <input type="text" name="Supervisor" required><br><br>
+
+        <label>Manager:</label>
+        <input type="text" name="Manager" required><br><br>
+
+        <label>Tenure Bucket:</label>
+        <input type="text" name="Tenure Bucket" required><br><br>
+
+        <label>Agent Shift:</label>
+        <input type="text" name="Agent Shift" required><br><br>
+
+        <input type="submit" value="Predict CSAT">
+    </form>
+
+    {% if prediction %}
+    <h3>{{ prediction }}</h3>
+    {% endif %}
+</body>
+</html>
