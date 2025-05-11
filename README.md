@@ -33,22 +33,22 @@ Traditional survey-based methods of measuring CSAT can be slow and limited. In t
 
 ## 📂 Project Structure
 
-├── templates/ # Flask HTML templates (if using frontend)
-├── .gitignore # Ignoring unnecessary files like env folders
-├── CSAT.ipynb # Notebook for EDA, model training & analysis
-├── README.md # Project documentation
-├── agent_stats.csv # Agent performance stats (for feature engineering)
-├── supervisor_stats.csv # Supervisor performance stats
-├── app.py # Flask API code
-├── csat_model.h5 # Trained deep learning model (HDF5 format)
-├── csat_model.keras # Alternate Keras model format
-├── csat_pipeline.pkl # Preprocessing pipeline for training
-├── inference_preprocessor.py # Script for preprocessing during inference
-├── eCommerce_Customer_support_data.csv # Raw dataset
-├── feature_columns.pkl # Selected feature names used during training
-├── label_encoder.pkl # Trained LabelEncoder for 'Sub-category'
-├── robust_scaler.pkl # RobustScaler for skewed features
-├── standard_scaler.pkl # StandardScaler for normal features
+- templates/ # Flask HTML templates (if using frontend)
+- .gitignore # Ignoring unnecessary files like env folders
+- CSAT.ipynb # Notebook for EDA, model training & analysis
+- README.md # Project documentation
+- agent_stats.csv # Agent performance stats (for feature engineering)
+- supervisor_stats.csv # Supervisor performance stats
+- app.py # Flask API code
+- csat_model.h5 # Trained deep learning model (HDF5 format)
+- csat_model.keras # Alternate Keras model format
+- csat_pipeline.pkl # Preprocessing pipeline for training
+- inference_preprocessor.py # Script for preprocessing during inference
+- eCommerce_Customer_support_data.csv # Raw dataset
+- feature_columns.pkl # Selected feature names used during training
+- label_encoder.pkl # Trained LabelEncoder for 'Sub-category'
+- robust_scaler.pkl # RobustScaler for skewed features
+- standard_scaler.pkl # StandardScaler for normal features
 
 ## 🧪 Features & Engineering
 
